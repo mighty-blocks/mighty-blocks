@@ -1,0 +1,33 @@
+.mighty-blocks-icon {
+	.editor-inserter__results &,
+	.editor-autocompleters__block &,
+	.components-panel__body-toggle & {
+		color: $color-blue-005;
+	}
+
+	.block-editor-block-switcher__no-switcher-icon.has-text & {
+		margin-right: 0;
+	}
+
+	.components-base-control__help &,
+	.mighty-blocks-control__tab & {
+		width: $size-20;
+		height: $size-20;
+		vertical-align: middle;
+	}
+
+	.is-active &--format-background-color path,
+	.is-active &--box-shadow-preset-2 g g,
+	.is-active &--box-shadow-preset-3 g g,
+	.is-active &--box-shadow-preset-4 g:last-child,
+	.is-active &--box-shadow-preset-5 g g {
+		fill: $color-gray-555;
+	}
+
+	&--side-top rect:not(:first-child),
+	&--side-right rect:not(:first-child),
+	&--side-bottom rect:not(:nth-child(2)),
+	&--side-left rect:not(:nth-child(2)) {
+		fill: $color-light-gray-dcd;
+	}
+}

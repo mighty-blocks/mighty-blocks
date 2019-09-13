@@ -1,0 +1,4 @@
+export const LETTER_SPACING_DEFAULT_VALUE = 0;
+export const LETTER_SPACING_MIN_VALUE = -10;
+export const LETTER_SPACING_MAX_VALUE = 10;
+export const LETTER_SPACING_STEP = 0.5;

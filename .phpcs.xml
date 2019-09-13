@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ruleset name="Mighty Blocks">
+	<!-- See https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/blob/develop/phpcs.xml.dist.sample -->
+
+	<!-- Show progress and sniff codes. -->
+	<arg value="ps"/>
+
+	<!-- Find every file. -->
+	<file>.</file>
+
+	<!-- Check only PHP files. -->
+	<arg name="extensions" value="php"/>
+
+	<!-- Check for cross-version support for PHP 5.3 and higher. -->
+	<rule ref="PHPCompatibility"/>
+	<config name="testVersion" value="5.3-"/>
+
+	<!-- Check against WordPress Coding Standards. -->
+	<rule ref="WordPress"/>
+
+	<rule ref="Squiz.Commenting.FunctionComment.MissingParamComment">
+		<severity>0</severity>
+	</rule>
+
+	<!-- Exclude third-party files. -->
+	<exclude-pattern>/vendor/*</exclude-pattern>
+	<exclude-pattern>/node_modules/*</exclude-pattern>
+</ruleset>

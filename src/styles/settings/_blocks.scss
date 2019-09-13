@@ -1,0 +1,17 @@
+//
+// Borrowed from https://github.com/WordPress/gutenberg/blob/master/assets/stylesheets/_variables.scss#L54-L62
+//
+$block-padding: 14px;
+$block-margin: 28px;
+$block-side-ui-width: 28px;
+$block-side-ui-clearance: 2px;
+$block-container-side-padding: $block-side-ui-width + $block-padding + 2 * $block-side-ui-clearance;
+
+$block-row-max-columns: 4;
+$block-row-gaps: (
+	(no, 0px),
+	(small, 10px),
+	(medium, 20px),
+	(large, 40px),
+	(huge, 80px),
+);

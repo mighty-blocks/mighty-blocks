@@ -1,0 +1,30 @@
+.mighty-blocks-border-radius-control {
+
+}
+
+.mighty-blocks-border-radius-control__inner {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.mighty-blocks-border-radius-control__advanced {
+	flex: 0 0 23%;
+}
+
+.mighty-blocks-spacing-control__toolbar {
+	display: inline-flex;
+	align-items: center;
+	margin-left: $size-8;
+}
+
+.mighty-blocks-border-radius-control .components-base-control__help {
+	text-align: center;
+}
+
+.mighty-blocks-border-radius-control .components-base-control__help svg {
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+}

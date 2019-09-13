@@ -1,0 +1,15 @@
+@mixin media-query-mobile() {
+	@media (max-width: #{$breakpoint-mobile}) {
+		@content;
+	}
+}
+
+@mixin maybe-wrap-in-media-query($breakpoint) {
+	@if $breakpoint {
+		@media(max-width: #{$breakpoint}) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}

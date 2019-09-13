@@ -1,0 +1,10 @@
+export const FONT_WEIGHT_DEFAULT = '';
+export const FONT_WEIGHT_THIN = 100;
+export const FONT_WEIGHT_EXTRA_LIGHT = 200;
+export const FONT_WEIGHT_LIGHT = 300;
+export const FONT_WEIGHT_NORMAL = 400;
+export const FONT_WEIGHT_MEDIUM = 500;
+export const FONT_WEIGHT_SEMI_BOLD = 600;
+export const FONT_WEIGHT_BOLD = 700;
+export const FONT_WEIGHT_EXTRA_BOLD = 800;
+export const FONT_WEIGHT_BLACK = 900;

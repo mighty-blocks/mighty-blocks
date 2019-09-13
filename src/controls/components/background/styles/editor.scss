@@ -1,0 +1,47 @@
+.mighty-blocks-background-control__toolbar {
+	display: flex;
+	margin-bottom: $size-24;
+}
+
+.mighty-blocks-background-control__toolbar-button {
+	height: 40px;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	border: 1px solid transparentize($color-gray-555, .8);
+	color: #dddfe0;
+
+	&:first-child {
+		border-top-left-radius: $size-4;
+		border-bottom-left-radius: $size-4;
+	}
+
+	&:last-child {
+		border-top-right-radius: $size-4;
+		border-bottom-right-radius: $size-4;
+	}
+
+	& ~ & {
+		margin-left: -1px;
+	}
+
+	&:hover,
+	&:focus,
+	&:active,
+	&.is-active {
+		color: $color-gray-555;
+		border-color: $color-gray-555;
+	}
+
+	&:focus:not(:disabled) {
+		box-shadow: none;
+		outline: none;
+	}
+}
+
+.mighty-blocks-background-color__toolbar-icon {
+	width: $size-20;
+	height: $size-20;
+	margin-right: $size-8;
+}
