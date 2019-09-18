@@ -1,0 +1,417 @@
+# Copyright (C) 2019 mightyblocks
+# This file is distributed under the same license as the Mighty Blocks plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Mighty Blocks 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mighty-blocks\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-09-18T11:53:26+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.3.0\n"
+"X-Domain: mighty-blocks\n"
+
+#. Plugin Name of the plugin
+msgid "Mighty Blocks"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "http://mightyblocks.com"
+msgstr ""
+
+#. Description of the plugin
+msgid "Gutenberg on Steroids."
+msgstr ""
+
+#. Author of the plugin
+msgid "mightyblocks"
+msgstr ""
+
+#: src/components/breakpoints/breakpoints-switcher.js:44
+msgid "Change breakpoint"
+msgstr ""
+
+#: src/controls/components/background-gradient/main.js:153
+msgid "Type"
+msgstr ""
+
+#: src/controls/components/background-gradient/main.js:162
+msgid "Angle (°)"
+msgstr ""
+
+#: src/controls/components/background-gradient/main.js:172
+msgid "Start (%)"
+msgstr ""
+
+#: src/controls/components/background-gradient/main.js:181
+msgid "Stop (%)"
+msgstr ""
+
+#: src/controls/components/background-gradient/main.js:189
+msgid "Place Above Image"
+msgstr ""
+
+#: src/controls/components/background-gradient/main.js:201
+#: src/controls/components/border/main.js:157
+#: src/formats/color/index.js:104
+msgid "Clear"
+msgstr ""
+
+#: src/controls/components/background-gradient/utils.js:21
+msgid "Linear"
+msgstr ""
+
+#: src/controls/components/background-gradient/utils.js:22
+msgid "Radial"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:53
+msgid "Top Left"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:54
+msgid "Top Center"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:55
+msgid "Top Right"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:56
+msgid "Center Left"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:57
+msgid "Center"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:58
+msgid "Center Right"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:59
+msgid "Bottom Left"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:60
+msgid "Bottom Center"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:61
+msgid "Bottom Right"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:72
+msgid "Actual Size"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:73
+msgid "Cover"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:74
+msgid "Contain"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:85
+msgid "Repeat"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:86
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:87
+msgid "Repeat Vertically"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:88
+msgid "No Repeat"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:99
+msgid "Normal"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:100
+msgid "Multiply"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:101
+msgid "Overlay"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:102
+msgid "Screen"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:103
+msgid "Darken"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:104
+msgid "Lighten"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:105
+msgid "Color Dodge"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:106
+msgid "Hard Light"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:107
+msgid "Soft Light"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:108
+msgid "Difference"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:109
+msgid "Exclusion"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:110
+msgid "Hue"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:111
+msgid "Saturation"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:112
+#: src/controls/components/border/main.js:134
+#: src/formats/color/index.js:30
+msgid "Color"
+msgstr ""
+
+#: src/controls/components/background-image/utils.js:113
+msgid "Luminosity"
+msgstr ""
+
+#: src/controls/components/background/utils.js:25
+#: src/controls/components/border/utils.js:106
+msgid "Solid"
+msgstr ""
+
+#: src/controls/components/background/utils.js:30
+msgid "Gradient"
+msgstr ""
+
+#: src/controls/components/border-radius/main.js:89
+msgid "Rounded Corners"
+msgstr ""
+
+#: src/controls/components/border-radius/main.js:101
+msgid "Unlink sides"
+msgstr ""
+
+#: src/controls/components/border-radius/main.js:102
+msgid "Link sides"
+msgstr ""
+
+#: src/controls/components/border-radius/main.js:110
+msgid "Reset"
+msgstr ""
+
+#: src/controls/components/border/main.js:92
+msgid "Side"
+msgstr ""
+
+#: src/controls/components/border/main.js:109
+msgid "Width"
+msgstr ""
+
+#: src/controls/components/border/main.js:144
+msgid "Style"
+msgstr ""
+
+#: src/controls/components/border/utils.js:107
+msgid "Hidden"
+msgstr ""
+
+#: src/controls/components/border/utils.js:108
+msgid "Dotted"
+msgstr ""
+
+#: src/controls/components/border/utils.js:109
+msgid "Dashed"
+msgstr ""
+
+#: src/controls/components/border/utils.js:110
+msgid "Double"
+msgstr ""
+
+#: src/controls/components/border/utils.js:111
+msgid "Groove"
+msgstr ""
+
+#: src/controls/components/border/utils.js:112
+msgid "Outset"
+msgstr ""
+
+#: src/controls/components/border/utils.js:113
+msgid "Inset"
+msgstr ""
+
+#: src/controls/components/border/utils.js:114
+msgid "Ridge"
+msgstr ""
+
+#: src/controls/components/border/utils.js:115
+#: src/controls/components/text-transform/utils.js:25
+msgid "None"
+msgstr ""
+
+#: src/controls/components/box-shadow/utils.js:20
+#: src/controls/components/text-shadow/utils.js:20
+msgid "Preset #1"
+msgstr ""
+
+#: src/controls/components/box-shadow/utils.js:32
+#: src/controls/components/text-shadow/utils.js:31
+msgid "Preset #2"
+msgstr ""
+
+#: src/controls/components/box-shadow/utils.js:44
+#: src/controls/components/text-shadow/utils.js:42
+msgid "Preset #3"
+msgstr ""
+
+#: src/controls/components/box-shadow/utils.js:56
+#: src/controls/components/text-shadow/utils.js:53
+msgid "Preset #4"
+msgstr ""
+
+#: src/controls/components/box-shadow/utils.js:68
+#: src/controls/components/text-shadow/utils.js:64
+msgid "Preset #5"
+msgstr ""
+
+#: src/controls/components/box-shadow/utils.js:89
+#: src/controls/components/text-shadow/utils.js:84
+msgid "Horizontal Offset"
+msgstr ""
+
+#: src/controls/components/box-shadow/utils.js:96
+#: src/controls/components/text-shadow/utils.js:91
+msgid "Vertical Offset"
+msgstr ""
+
+#: src/controls/components/box-shadow/utils.js:103
+#: src/controls/components/text-shadow/utils.js:98
+msgid "Blur"
+msgstr ""
+
+#: src/controls/components/box-shadow/utils.js:110
+msgid "Spread"
+msgstr ""
+
+#: src/controls/components/box-shadow/utils.js:127
+msgid "Outer"
+msgstr ""
+
+#: src/controls/components/box-shadow/utils.js:131
+msgid "Inner"
+msgstr ""
+
+#: src/controls/components/font-family/utils.js:24
+#: src/controls/components/font-weight/utils.js:29
+#: src/controls/components/text-transform/utils.js:24
+msgid "Default"
+msgstr ""
+
+#: src/controls/components/font-family/utils.js:25
+msgid "Arial"
+msgstr ""
+
+#: src/controls/components/font-family/utils.js:26
+msgid "Georgia"
+msgstr ""
+
+#: src/controls/components/font-family/utils.js:27
+msgid "Helvetica"
+msgstr ""
+
+#: src/controls/components/font-family/utils.js:28
+msgid "Times New Roman"
+msgstr ""
+
+#: src/controls/components/font-weight/utils.js:30
+msgid "Thin (100)"
+msgstr ""
+
+#: src/controls/components/font-weight/utils.js:31
+msgid "Extra Light (200)"
+msgstr ""
+
+#: src/controls/components/font-weight/utils.js:32
+msgid "Light (300)"
+msgstr ""
+
+#: src/controls/components/font-weight/utils.js:33
+msgid "Normal (400)"
+msgstr ""
+
+#: src/controls/components/font-weight/utils.js:34
+msgid "Medium (500)"
+msgstr ""
+
+#: src/controls/components/font-weight/utils.js:35
+msgid "Semi-bold (600)"
+msgstr ""
+
+#: src/controls/components/font-weight/utils.js:36
+msgid "Bold (700)"
+msgstr ""
+
+#: src/controls/components/font-weight/utils.js:37
+msgid "Extra Bold (800)"
+msgstr ""
+
+#: src/controls/components/font-weight/utils.js:38
+msgid "Black (900)"
+msgstr ""
+
+#: src/controls/components/text-transform/utils.js:26
+msgid "Lowercase"
+msgstr ""
+
+#: src/controls/components/text-transform/utils.js:27
+msgid "Uppercase"
+msgstr ""
+
+#: src/controls/components/text-transform/utils.js:28
+msgid "Capitalize"
+msgstr ""
+
+#: src/controls/panels/background/index.js:37
+msgid "Background"
+msgstr ""
+
+#: src/controls/panels/border/index.js:39
+msgid "Border"
+msgstr ""
+
+#: src/controls/panels/shadows/index.js:36
+msgid "Shadows"
+msgstr ""
+
+#: src/controls/panels/text/index.js:51
+msgid "Text"
+msgstr ""
+
+#: src/formats/color/index.js:35
+msgid "Background Color"
+msgstr ""
+
+#: src/formats/remove/index.js:15
+#: src/formats/remove/index.js:30
+msgid "Remove Formatting"
+msgstr ""
