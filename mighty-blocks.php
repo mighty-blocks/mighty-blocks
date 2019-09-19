@@ -1,16 +1,16 @@
 <?php
 /**
  * Plugin Name: Mighty Blocks
- * Plugin URI:  http://mightyblocks.com
+ * Plugin URI:  https://mightyblocks.com/
  * Description: Gutenberg on Steroids.
  * Version:     1.0.0
  * Author:      mightyblocks
- * Author URI:  http://mightyblocks.com
+ * Author URI:  https://mightyblocks.com
  * Text Domain: mighty-blocks
  *
  * @package Mighty_Blocks
  * @author  Mighty Blocks
- * @link    http://mightyblocks.com
+ * @link    https://mightyblocks.com
  */
 
 // Exit if accessed directly.
