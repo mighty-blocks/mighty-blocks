@@ -22,3 +22,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 require_once 'lib/assets.php';
 require_once 'lib/styles.php';
 require_once 'lib/controls.php';
+require_once 'lib/i18n.php';
