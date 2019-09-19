@@ -3,13 +3,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Mighty Blocks 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mighty-blocks\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mighty-blocks-git\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-09-18T11:53:26+00:00\n"
+"POT-Creation-Date: 2019-09-19T11:49:43+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.3.0\n"
 "X-Domain: mighty-blocks\n"
@@ -19,8 +19,7 @@ msgid "Mighty Blocks"
 msgstr ""
 
 #. Plugin URI of the plugin
-#. Author URI of the plugin
-msgid "http://mightyblocks.com"
+msgid "https://mightyblocks.com/"
 msgstr ""
 
 #. Description of the plugin
@@ -29,6 +28,10 @@ msgstr ""
 
 #. Author of the plugin
 msgid "mightyblocks"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://mightyblocks.com"
 msgstr ""
 
 #: src/components/breakpoints/breakpoints-switcher.js:44
@@ -321,6 +324,10 @@ msgstr ""
 msgid "Inner"
 msgstr ""
 
+#: src/controls/components/font-family/main.js:41
+msgid "Font"
+msgstr ""
+
 #: src/controls/components/font-family/utils.js:24
 #: src/controls/components/font-weight/utils.js:29
 #: src/controls/components/text-transform/utils.js:24
@@ -341,6 +348,14 @@ msgstr ""
 
 #: src/controls/components/font-family/utils.js:28
 msgid "Times New Roman"
+msgstr ""
+
+#: src/controls/components/font-size/main.js:45
+msgid "Size"
+msgstr ""
+
+#: src/controls/components/font-weight/main.js:41
+msgid "Weight"
 msgstr ""
 
 #: src/controls/components/font-weight/utils.js:30
@@ -377,6 +392,18 @@ msgstr ""
 
 #: src/controls/components/font-weight/utils.js:38
 msgid "Black (900)"
+msgstr ""
+
+#: src/controls/components/letter-spacing/main.js:46
+msgid "Letter Spacing"
+msgstr ""
+
+#: src/controls/components/line-height/main.js:46
+msgid "Line Height"
+msgstr ""
+
+#: src/controls/components/text-transform/main.js:41
+msgid "Transform"
 msgstr ""
 
 #: src/controls/components/text-transform/utils.js:26

@@ -42,7 +42,7 @@ function FontSizeControl( props ) {
 			label={
 				<Fragment>
 					<span className="mighty-blocks-control__label-text">
-						{ __( 'Size', 'mighty-block' ) }
+						{ __( 'Size', 'mighty-blocks' ) }
 					</span>
 
 					<BreakpointsSwitcher />

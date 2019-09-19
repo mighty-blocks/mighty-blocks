@@ -38,7 +38,7 @@ function TextTransformControl( props ) {
 			label={
 				<Fragment>
 					<span className="mighty-blocks-control__label-text">
-						{ __( 'Transform', 'mighty-block' ) }
+						{ __( 'Transform', 'mighty-blocks' ) }
 					</span>
 
 					<BreakpointsSwitcher />

@@ -43,7 +43,7 @@ function LineHeightControl( props ) {
 			label={
 				<Fragment>
 					<span className="mighty-blocks-control__label-text">
-						{ __( 'Line Height', 'mighty-block' ) }
+						{ __( 'Line Height', 'mighty-blocks' ) }
 					</span>
 
 					<BreakpointsSwitcher />

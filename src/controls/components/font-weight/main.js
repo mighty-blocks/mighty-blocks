@@ -38,7 +38,7 @@ function FontWeightControl( props ) {
 			label={
 				<Fragment>
 					<span className="mighty-blocks-control__label-text">
-						{ __( 'Weight', 'mighty-block' ) }
+						{ __( 'Weight', 'mighty-blocks' ) }
 					</span>
 
 					<BreakpointsSwitcher />

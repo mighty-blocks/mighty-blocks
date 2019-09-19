@@ -38,7 +38,7 @@ function FontFamilyControl( props ) {
 			label={
 				<Fragment>
 					<span className="mighty-blocks-control__label-text">
-						{ __( 'Font', 'mighty-block' ) }
+						{ __( 'Font', 'mighty-blocks' ) }
 					</span>
 
 					<BreakpointsSwitcher />

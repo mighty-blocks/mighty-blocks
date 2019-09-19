@@ -43,7 +43,7 @@ function LetterSpacingControl( props ) {
 			label={
 				<Fragment>
 					<span className="mighty-blocks-control__label-text">
-						{ __( 'Letter Spacing', 'mighty-block' ) }
+						{ __( 'Letter Spacing', 'mighty-blocks' ) }
 					</span>
 
 					<BreakpointsSwitcher />
