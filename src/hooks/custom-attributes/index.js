@@ -30,6 +30,9 @@ export function addCustomAttributes( settings ) {
 			mightyBlocksId: {
 				type: 'string',
 			},
+			mightyBlocksStyles: {
+				type: 'string',
+			},
 		} );
 	}
 

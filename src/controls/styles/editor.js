@@ -15,7 +15,7 @@ import { withSelect } from '@wordpress/data';
 import { blockNameToClassName } from '../../utils';
 import { getBlockStyles } from './utils';
 
-class StylesProvider extends Component {
+class EditorStyles extends Component {
 	/**
 	 * Local state.
 	 *
@@ -128,11 +128,12 @@ class StylesProvider extends Component {
 
 export default withSelect( ( select, { name } ) => {
 	const { getBlockSupport } = select( 'core/blocks' );
+	const { getBreakpoints } = select( 'mighty-blocks/breakpoints' );
 	const { getStates } = select( 'mighty-blocks/states' );
 
 	return {
 		controls: getBlockSupport( name, 'controls', [] ),
-		breakpoints: getBlockSupport( name, 'breakpoints', [] ),
+		breakpoints: getBreakpoints(),
 		states: getStates(),
 	};
-} )( StylesProvider );
+} )( EditorStyles );

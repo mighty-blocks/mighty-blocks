@@ -6,7 +6,7 @@ import cx from 'classnames';
 /**
  * WordPress dependencies
  */
-import { render } from '@wordpress/element';
+import { Fragment } from '@wordpress/element';
 import { withSelect } from '@wordpress/data';
 import { addFilter } from '@wordpress/hooks';
 import { createHigherOrderComponent } from '@wordpress/compose';
@@ -15,19 +15,8 @@ import { createHigherOrderComponent } from '@wordpress/compose';
  * Internal dependencies
  */
 import { blockNameToClassName } from '../../utils';
-import StylesCollector from './collector';
-import StylesProvider from './provider';
-
-/**
- * Runs the monitor that collects
- * the styles for the frontend.
- */
-window._wpLoadBlockEditor.then( () => {
-	render(
-		<StylesCollector />,
-		document.createElement( 'div' )
-	);
-} );
+import EditorStyles from './editor';
+import FrontendStyles from './frontend';
 
 /**
  * Applies the gathered styles from the controls to the block.
@@ -50,6 +39,7 @@ const withStylesToBlockListBlock = createHigherOrderComponent( ( BlockListBlock 
 		};
 	} )( ( props ) => {
 		const {
+			clientId,
 			name,
 			attributes,
 			hasControls,
@@ -62,18 +52,26 @@ const withStylesToBlockListBlock = createHigherOrderComponent( ( BlockListBlock 
 		}
 
 		return (
-			<StylesProvider name={ name } attributes={ attributes }>
-				{ ( { className } ) => {
-					const { className: originalClassName, ...restProps } = props;
+			<Fragment>
+				<EditorStyles name={ name } attributes={ attributes }>
+					{ ( { className } ) => {
+						const { className: originalClassName, ...restProps } = props;
 
-					return (
-						<BlockListBlock
-							className={ cx( originalClassName, className ) }
-							{ ...restProps }
-						/>
-					);
-				} }
-			</StylesProvider>
+						return (
+							<BlockListBlock
+								className={ cx( originalClassName, className ) }
+								{ ...restProps }
+							/>
+						);
+					} }
+				</EditorStyles>
+
+				<FrontendStyles
+					clientId={ clientId }
+					name={ name }
+					attributes={ attributes }
+				/>
+			</Fragment>
 		);
 	} );
 }, 'withStylesToBlockListBlock' );
