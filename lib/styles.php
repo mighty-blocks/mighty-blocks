@@ -12,34 +12,39 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Returns whether the user have enough capabilities
- * to edit the styles.
+ * Get the styles of the block.
  *
- * @since  1.0.0
- * @return boolean
+ * @since  2.0.0
+ * @param  array $block
+ * @return string
  */
-function mighty_blocks_styles_meta_auth() {
-	return current_user_can( 'edit_posts' );
-}
+function mighty_blocks_get_block_styles( $block ) {
+	if ( ! is_array( $block ) ) {
+		return '';
+	}
 
-/**
- * Registers the meta used to store the generated block styles.
- *
- * @since  1.0.0
- * @return void
- */
-function mighty_blocks_register_styles_meta() {
-	register_post_meta(
-		'',
-		'_mighty_blocks_styles',
-		array(
-			'single'        => true,
-			'show_in_rest'  => true,
-			'auth_callback' => 'mighty_blocks_styles_meta_auth',
-		)
+	if ( ! is_array( $block['attrs'] ) ) {
+		$block['attrs'] = array();
+	}
+
+	$inner_blocks = mighty_blocks_is_reusable_block( $block )
+		? mighty_blocks_parse_reusable_block( $block )
+		: $block['innerBlocks'];
+
+	$styles = array_reduce(
+		$inner_blocks,
+		function( $styles, $inner_block ) {
+			return $styles . "\n" . mighty_blocks_get_block_styles( $inner_block );
+		},
+		''
 	);
+
+	if ( isset( $block['attrs']['mightyBlocksStyles'] ) ) {
+		$styles = $styles . "\n" . $block['attrs']['mightyBlocksStyles'];
+	}
+
+	return $styles;
 }
-add_filter( 'init', 'mighty_blocks_register_styles_meta' );
 
 /**
  * Enqueues the generated block styles as inline style.
@@ -54,15 +59,22 @@ function mighty_blocks_enqueue_styles() {
 		return;
 	}
 
-	$post_styles = get_post_meta( $post_id, '_mighty_blocks_styles', true );
+	$blocks = parse_blocks( get_post_field( 'post_content', $post_id ) );
+	$styles = array_reduce(
+		$blocks,
+		function( $styles, $block ) {
+			return $styles . "\n" . mighty_blocks_get_block_styles( $block );
+		},
+		''
+	);
 
-	if ( empty( $post_styles ) ) {
+	if ( empty( $styles ) ) {
 		return;
 	}
 
 	// phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion
 	wp_register_style( 'mighty-blocks-styles', false );
 	wp_enqueue_style( 'mighty-blocks-styles' );
-	wp_add_inline_style( 'mighty-blocks-styles', wp_strip_all_tags( $post_styles ) );
+	wp_add_inline_style( 'mighty-blocks-styles', wp_strip_all_tags( $styles ) );
 }
 add_action( 'wp_enqueue_scripts', 'mighty_blocks_enqueue_styles', 9999 );

@@ -20,6 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Initialize the plugin.
 require_once 'lib/assets.php';
+require_once 'lib/blocks.php';
 require_once 'lib/styles.php';
 require_once 'lib/controls.php';
 require_once 'lib/i18n.php';
