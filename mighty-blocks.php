@@ -3,7 +3,7 @@
  * Plugin Name: Mighty Blocks
  * Plugin URI:  https://mightyblocks.com/
  * Description: Gutenberg on Steroids.
- * Version:     1.0.0
+ * Version:     2.0.0
  * Author:      mightyblocks
  * Author URI:  https://mightyblocks.com
  * Text Domain: mighty-blocks
