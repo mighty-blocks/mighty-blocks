@@ -24,7 +24,7 @@
     "classnames": "2.2.6",
     "create-emotion": "10.0.9",
     "memize": "1.0.5",
-    "nanoid": "2.0.1",
+    "nanoid": "3.1.31",
     "rememo": "3.0.0",
     "require-context.macro": "1.0.4"
   },
